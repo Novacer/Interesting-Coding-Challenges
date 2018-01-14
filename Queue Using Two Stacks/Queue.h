@@ -10,6 +10,7 @@ private:
     Stack* outbox;
 public:
     Queue();
+    ~Queue();
     void enqueue(LinkedNode* plate);
     LinkedNode* dequeue();
     bool isEmpty();

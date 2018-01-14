@@ -33,6 +33,14 @@ int main(int argc, char** argv) {
     assert(number_2->val == 2);
     assert(number_3->val == 3);
     
+    delete number_1;
+    delete number_2;
+    delete number_3;
+    
+    number_1 = 0;
+    number_2 = 0;
+    number_3 = 0;
+    
     return 0;
 }
 

@@ -55,3 +55,11 @@ LinkedNode* Queue::dequeue(){
     return outbox->pop();
 }
 
+Queue::~Queue(){
+    delete inbox;
+    delete outbox;
+    inbox = 0;
+    outbox = 0;
+    
+    cout << "successfully deleted Queue inbox/outbox" << endl;
+}
