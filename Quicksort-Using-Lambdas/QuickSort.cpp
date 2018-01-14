@@ -14,7 +14,7 @@ using namespace std;
 //           is called later
 
 vector<int> filterLeft(vector<int> list, int pivot){
-                                                                       // this is the lambda expression WHHOAAA!!!
+                                                    // this is the lambda expression WHHOAAA!!!
     list.erase(remove_if(list.begin(), list.end(), [pivot](const int& x) {return (x >= pivot);}) , list.end());
     
     return list;
@@ -26,7 +26,7 @@ vector<int> filterLeft(vector<int> list, int pivot){
 // Note: see documentation from filterLeft on why this function uses pass by value
 
 vector<int> filterRight(vector<int> list, int pivot){
-    
+                                                   // another lambda expression?? W H A T ?
     list.erase(remove_if(list.begin(), list.end(), [pivot](const int& x) {return (x <= pivot);}), list.end());
     
     return list;
@@ -34,7 +34,7 @@ vector<int> filterRight(vector<int> list, int pivot){
 
 
 // append(left, pivot, right) appends left, pivot, and right 
-//   in that order as a single vector<int> and returns it
+//   in that order as a single vector<int> and returns it 
 
 vector<int> append(vector<int> left, int pivot, vector<int> right){
     if (left.empty()){
