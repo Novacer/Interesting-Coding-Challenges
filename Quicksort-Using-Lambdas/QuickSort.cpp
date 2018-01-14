@@ -10,8 +10,8 @@ using namespace std;
 // filterLeft(list, pivot) returns a new vector<int> that has all the elements 
 //   greater than or equal to pivot in list removed
 // Note: this function uses pass by value to create a new copy of list every time it is called.
-//          This is necessary because mutating the original list would cause an error when filterRight(list, pivot)
-//           is called later
+//       This is necessary because mutating the original list would cause an error when filterRight(list, pivot)
+//       is called later
 
 vector<int> filterLeft(vector<int> list, int pivot){
                                                     // this is the lambda expression WHHOAAA!!!
@@ -22,8 +22,8 @@ vector<int> filterLeft(vector<int> list, int pivot){
 
 
 // filterRight(list, pivot) returns a new vector<int> that has all the elements
-// less than or equal to pivot removed
-// Note: see documentation from filterLeft on why this function uses pass by value
+//   less than or equal to pivot removed
+// Note: see documentation from filterLeft(list, pivot) on why this function uses pass by value
 
 vector<int> filterRight(vector<int> list, int pivot){
                                                    // another lambda expression?? W H A T ?
